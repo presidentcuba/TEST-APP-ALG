@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- IMPORT BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <!-- IMPORT FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>ALG APP</title>
+  </head>
+  <body>
+    <div class="test-app">
+      <div class="container-app">
+        <div class="test-app-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="item-left">
+                  <div class="image-active">
+                    <div class="image-default">
+                      <img src="./images/img1.png" alt="product" />
+                    </div>
+                    <div class="image-default">
+                      <img src="./images/img2.png" alt="product" />
+                    </div>
+                    <div class="image-default">
+                      <img src="./images/img3.png" alt="product" />
+                    </div>
+                    <div class="image-default">
+                      <img src="./images/img4.png" alt="product" />
+                    </div>
+                  </div>
+                  <div class="list-image">
+                    <div class="image active">
+                      <img
+                        src="./images/img1.png"
+                        onclick="currentSlide(1)"
+                        alt="product"
+                      />
+                    </div>
+                    <div class="image">
+                      <img
+                        src="./images/img2.png"
+                        alt="product"
+                        onclick="currentSlide(2)"
+                      />
+                    </div>
+                    <div class="image">
+                      <img
+                        src="./images/img3.png"
+                        alt="product"
+                        onclick="currentSlide(3)"
+                      />
+                    </div>
+                    <div class="image">
+                      <img
+                        src="./images/img4.png"
+                        alt="product"
+                        onclick="currentSlide(4)"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="item-box">
+                  <h5 class="title">
+                    FedEx Standard Box for 15KG Packaging (20" x 20" x 12")
+                  </h5>
+                  <span class="description"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin consectetur auctor cursus. Fusce placerat pulvinar
+                    augue, quis ultricies arcu efficitur quis.
+                  </span>
+                  <div class="price">
+                    <span class="price-sale">$125.00</span>
+                    <span class="price-old">$250.00</span>
+                    <span class="percent-sale">50%</span>
+                  </div>
+                  <div class="btn-add">
+                    <form>
+                      <input
+                        class="btn-descre"
+                        type="button"
+                        onclick="decrementValue()"
+                        value="-"
+                      />
+                      <input
+                        class="input-text"
+                        type="text"
+                        id="number-product"
+                        value="0"
+                        disabled
+                      />
+
+                      <input
+                        class="btn-incre"
+                        type="button"
+                        onclick="incrementValue()"
+                        value="+"
+                      />
+                    </form>
+                    <div class="btn-add-product">
+                      <i class="fal fa-cart-arrow-down"></i>
+                      <input
+                        class="btn-add-cart"
+                        type="button"
+                        onclick="addToCart()"
+                        value="Add to cart"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- IMPORT JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
